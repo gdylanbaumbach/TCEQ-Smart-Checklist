@@ -300,6 +300,8 @@ if "suggestions_cache" not in st.session_state:
 
 st.header("TCEQ · OSSF Surface Spray Inspection Checklist")
 
+col_left, col_right = st.columns([1.1, 1], gap="large")
+
 # ── LEFT: Facility context + checklist ───────────────────────────────────────
 with col_left:
     ctx1, ctx2 = st.columns(2)
