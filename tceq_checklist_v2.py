@@ -226,7 +226,7 @@ def get_violation_suggestions(
 
     already = f"Already accepted: {', '.join(already_accepted)}" if already_accepted else ""
 
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
     prompt = f"""You are assisting a TCEQ field inspector using an OSSF (On-Site Sewage Facility) surface spray inspection checklist.
 
 FACILITY CONTEXT:
