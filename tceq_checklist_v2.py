@@ -298,11 +298,11 @@ if "suggestions_cache" not in st.session_state:
 
 # ── UI ────────────────────────────────────────────────────────────────────────
 
-st.markdown("### TCEQ · OSSF Surface Spray Inspection Checklist", unsafe_allow_html=True)
 st.markdown("""
 <style>
-h3 { white-space: nowrap; font-size: clamp(1rem, 2vw, 1.4rem) !important; }
+.app-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.5rem; }
 </style>
+<div class="app-title">TCEQ · OSSF Surface Spray Inspection Checklist</div>
 """, unsafe_allow_html=True)
 
 col_left, col_right = st.columns([1.1, 1], gap="large")
